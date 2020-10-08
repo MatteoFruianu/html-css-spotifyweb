@@ -1,15 +1,23 @@
+
+/* general-style */
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
 }
 
+/* app container */
+
 .app {
   display: flex;
   height: 100vh;
   background-color: grey;
   flex-direction: column;
+  overflow: hidden;
 }
+
+/* upper container main content */
 
 .main-content {
   display: flex;
@@ -17,22 +25,29 @@ body {
   flex-grow: 1;
 }
 
-.player {
-  background: orange;
-  z-index: 1;
-}
+/* .sidebar */
 
 .sidebar {
+  display: flex;
   background: maroon;
   flex-basis: 230px;
-  
 }
+
+.account {
+  width: 100%;
+  height: 80px;
+  align-self: flex-end;
+}
+
+/* content right */
 
 .content {
   position: relative;
   flex-grow: 1;
   background: mediumseagreen;
 }
+
+/* topnav */
 
 .topnav {
   position: absolute;
@@ -43,6 +58,8 @@ body {
   background: rgb(135, 135, 158);
   z-index: 1;
 }
+
+/* scrollable */
 
 .menu-nav {
   background: mistyrose;
@@ -59,6 +76,22 @@ body {
   background: olive;
   overflow-y: auto;
 }
+
+.scrollable .titles .content-title {
+  height: 200px;
+  width: 300px;
+  margin: 10px;;
+  background: lightsalmon;
+}
+
+/* footer */
+
+.player {
+  background: orange;
+  z-index: 1;
+}
+
+
 
 
 
