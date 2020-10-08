@@ -23,12 +23,12 @@ body {
 
 .sidebar {
   background: maroon;
+  flex-basis: 230px;
+  
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
+  flex-grow: 1;
   background: mediumseagreen;
 }
 
