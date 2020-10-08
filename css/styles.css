@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  background-color: grey;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  background: teal;
+  flex-grow: 1;
+}
+
+.player {
+  background: orange;
+}
+
+.sidebar {
+  background: maroon;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  background: mediumseagreen;
+}
+
+.topnav {
+  background: rgb(135, 135, 158);
+}
+
+.menu-nav {
+  background: mistyrose;
+}
+
+.scrollable {
+  background: olive;
+  flex-grow: 1;
+}
+
+
+
