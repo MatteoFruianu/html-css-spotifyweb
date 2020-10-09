@@ -9,6 +9,18 @@
 
 body {
   color: white; 
+  font-family: sans-serif;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+/* UTILITIES */
+text-center {
+  text-align: center;
 }
 
 /* app container */
@@ -33,18 +45,74 @@ body {
 .sidebar {
   display: flex;
   flex-direction: column;
-  background: maroon;
+  background: black;
   flex-basis: 230px;
+  padding: 15px;
+  color: #535353;
 }
 
+/* Sidebar-top content */
+
 .sidebar-top {
-  background: lightseagreen;
   flex-grow: 1;
 }
 
-.sidebar-bottom {
-  background: rgb(139, 91, 139);
-  height: 80px; /*debug*/
+.sidebar-top .logo {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.nav-menu img {
+  width: 20px;
+}
+
+.nav-playlist {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.nav-playlist ul li {
+  margin: 10px 0;
+}
+
+.nav-playlist ul li i {
+  padding-right: 5px;
+  font-size: 30px;
+}
+
+.nav-playlist ul li:first-child {
+  display: flex;
+  align-items: center;
+}
+
+
+.nav-playlist h4 {
+  color: white;
+}
+
+.sidebar-bottom p {
+  font-size: 14px;
+  padding: 5px;
+  border-bottom: 1px solid #535353;
+}
+
+.sidebar-bottom div {
+  color: white;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.sidebar-bottom div i {
+  font-size: 24px;
+  color:  #535353;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 
 
