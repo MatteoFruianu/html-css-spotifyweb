@@ -11,16 +11,23 @@ body {
   color: white; 
   font-family: sans-serif;
   font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
 
+.white {
+  color: white;
+}
 
+.bold {
+  font-weight: 700;
+}
 
 ul {
   list-style: none;
 }
 
 /* UTILITIES */
-text-center {
+.text-center {
   text-align: center;
 }
 
@@ -167,16 +174,16 @@ text-center {
 .menu-nav ul {
   display: flex;
   justify-content: center;
+  padding: 10px 0;
 }
 
 .menu-nav ul li {
   padding: 5px 10px;
   position: relative;
   cursor: pointer;
-  transition: hover .4s;
 }
 
-.menu-nav ul li:hover:after {
+.menu-nav ul li:after {
   content: "";
   position: absolute;
   left: 25%;
@@ -184,6 +191,12 @@ text-center {
   bottom: 0;
   height: 1px;
   background: lime;
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+.menu-nav ul li:hover:after {
+  opacity: 1;  
 }
 
 
@@ -201,40 +214,147 @@ text-center {
 }
 
 /* TITLE ROW */
-
-.titles-row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.title-section h3 {
+  padding-bottom: 5px;
 }
 
-.titles {
+.title-row {
+  padding: 20px;
+  padding-left: 0;  /*debug*/
+}
+
+.title-row ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.scrollable .titles .content-title {
-  height: 180px; /*debug*/
+.title-row ul li img {
+  max-width: 100%;
+}
+
+.title-row ul li h5 {
+  padding: 5px 0;
+}
+
+.title-section h6 {
+  color: #535353; 
+}
+
+.title-row ul li {
   flex-basis: calc((100% / 6) - 15px);
-  background: lightsalmon;
   margin-right: 15px;
 }
 
+.title-row ul li .title-img {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.title-row ul li .title-img .img-layover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: black;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity .4s;
+}
+
+.img-layover i {
+  font-size: 32px;
+}
+
+.title-row ul li:hover .title-img .img-layover {
+  opacity: .5;
+}
+
+
 /* footer */
+
 
 .player {
   display:flex;
-  background: orange;
-  height: 80px; /*debug*/
+  background: #272727;
+  padding: 5px;
   justify-content: space-between;
 }
 
 .action-footer {
-  background: red;
+  display: flex;
+  padding: 0 5px;
+  justify-content: space-between;
+  align-items: center;
   flex-basis: 230px;
+  color:  #bababa;
+}
+
+.action-left {
+  display: flex;
+  align-items: center; 
+}
+
+.action-right span {
+  padding: 0 5px;
+}
+
+.action-left div:first-child img {
+ height: 50px; 
+}
+
+.action-left div:first-child {
+  padding-right: 5px;
 }
 
 .controller-footer {
-  background: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.control-up ul {
+  display: flex;
+  align-items: center;
+}
+
+.control-up ul li {
+  padding: 10px;
+}
+
+.control-up ul li:nth-child(3) {
+  font-size: 32px;
+}
+
+.control-down ul {
+  display: flex;
+  align-items: center;
+}
+
+.control-down ul li {
+  padding: 10px;
+  padding-top: 0;
+}
+
+.prog-bar {
+  width: 400px;
+  height: 5px;
+  background: #535353;
+  border-radius: 5px;
+}
+
+.over-bar {
+  width: 100px;
+  height: 5px;
+  background: #bababa;
+  border-radius: 5px;
 }
 
 .audio-footer {
