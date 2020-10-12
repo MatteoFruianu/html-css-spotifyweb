@@ -60,6 +60,7 @@ ul {
   flex-basis: 230px;
   padding: 15px;
   color: #535353;
+  padding-bottom: 110px;
 }
 
 /* Sidebar-top content */
@@ -297,6 +298,11 @@ ul {
   background: #272727;
   padding: 5px;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom:0; 
+  height: 100px;
 }
 
 .action-footer {
@@ -372,6 +378,8 @@ ul {
   display: flex;
   align-items: center;
 }
+
+
 
 .controller-footer:hover .over-bar:after {
   opacity: 1;
