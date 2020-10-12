@@ -20,9 +20,9 @@
             </div>
             <div class="nav-menu">
               <ul>
-                <li> <img src="./img/home.svg" alt="home icon"> Home</li>
-                <li> <img src="./img/search.svg" alt="home icon"> Cerca</li>
-                <li> <img src="./img/libreria.svg" alt="home icon"> Libreria</li>
+                <li> <img src="./img/home.svg" alt="home icon"><span>Home</span></li>
+                <li> <img src="./img/search.svg" alt="home icon"><span>Cerca</span></li>
+                <li> <img src="./img/libreria.svg" alt="home icon"><span>Libreria</span></li>
               </ul>
             </div>
             <div class="nav-playlist">
@@ -40,8 +40,8 @@
             </div>
           </div>
           <div class="sidebar-bottom">
-            <p><i class="fas fa-arrow-circle-down"></i> Installa app</p>
-            <div><i class="fas fa-user-circle"></i> John Doe</div>
+            <p><i class="fas fa-arrow-circle-down"></i> <span>Installa app</span></p>
+            <div><i class="fas fa-user-circle"></i> <span>John Doe</span></div>
           </div>
         </aside>
 
@@ -63,7 +63,7 @@
             </div>
 
             <div class="title-section">
-              <h3>Recently Played</h3>
+              <h3 id="r-played">Recently Played</h3>
               <div class="title-row">
                 <ul>
                   <li class="text-center">
@@ -225,7 +225,7 @@
           </div>
           <div class="control-down">
             <ul>
-              <li>0:25</li>
+              <li class="small">0:25</li>
               <li>
                 <div class="prog-bar">
                   <div class="over-bar"></div>
@@ -235,9 +235,20 @@
             </ul>
           </div>
         </div>
-        <div class="audio-footer">audio</div>
+        <div class="audio-footer">
+          <ul>
+            <li><i class="fas fa-bars"></i></li>
+            <li><i class="fas fa-tv"></i></li>
+            <li><i class="fas fa-volume-up"></i></li>
+            <li>
+              <div class="prog-bar">
+                <div class="over-bar"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
-
+     <script src="./javascript/main.js"></script> 
   </body>
 </html>
